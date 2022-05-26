@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <form>
+          <h1>Hey There!</h1>
+          <label for="name"> What's your name?</label>
+          <input
+            minlength="3"
+            class="input-box"
+            id="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+          <label for="email"> What's your email address?</label>
+          <input
+            required
+            class="input-box"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+          />
+          <label for="service"> What services are you looking for?</label>
+          <select id="service" class="input-box" required>
+            <option value="">Choose a service</option>
+            <option>Service 1</option>
+            <option>Service 2</option>
+          </select>
+          <label for="budget"> What is your budget?</label>
+          <select id="budget" class="input-box" required>
+            <option value="">Select budget</option>
+            <option>Budget 1</option>
+            <option>Budget 2</option>
+          </select>
+          <label for="note"> Anything else you'd like to tell us?</label>
+          <textarea
+            id="note"
+            minlength="5"
+            class="input-box"
+            placeholder="Your message here..."
+          ></textarea>
+          <label>
+            I agree with the T&Cs. <input required type="checkbox"
+          /></label>
+          <button class="submit">
+            <a href="./index1.html">Submit</a>
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
